@@ -20,10 +20,6 @@ public:
     string name;
     string dept;
     string subject;
-    
-    void changeDept(string newDept){
-        dept = newDept;
-    }
 
     void getInfo(){
         cout <<"Name: "<< name<<endl;
