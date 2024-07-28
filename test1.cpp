@@ -12,4 +12,4 @@ int main(){
     double *ptr2 = &d;
     cout<<"Address of d is: "<<ptr2<<endl;
     cout<<"Value of d is: "<<*ptr2<<endl;
-}
+} 
