@@ -1,41 +1,21 @@
 #include<iostream>
-#include<string>
+#include<vector>
 using namespace std;
 
-class Teacher{
-    private:
-    double salary;
-    public:
-    //properties
-    string name;
-    string dept;
-    string subject;
-
-    Teacher(string name, string dept, double salary){
-        this->name = name;
-        this->dept = dept;
-        this->salary = salary;
+void selectionSort(int arr[], int n){
+    for(int i = 0;i<n-1;i++){
+        int minIndex = i;
+        for(int j = i+1;j<n;j++){
+            if(arr[j]<arr[minIndex]){
+                minIndex = j;
+            }
+        }
+        swap(arr[minIndex],arr[i]);
     }
     
-    void changeDept(string newDept){
-        dept = newDept;
-    }
-    void setSalary(double s){
-        salary = s;
-    }
-    double getSalary(){
-        return salary;
-    }
-    void getInfo(){
-        cout << "Name: "<< name <<endl; 
-        cout << "Department: "<< dept <<endl; 
-        cout << "Salary: "<< salary <<endl; 
-    }
-};
+}
 
 int main(){
-    Teacher t1("Hanish","cs",2392939);
-    t1.getInfo();
-    
+    int arr[] =  {89,23,83,42,75};
 
 }
