@@ -1,6 +1,16 @@
 #include<iostream>
 #include <vector>
 using namespace std;
+
+char toLowerCase(char ch){
+    if(ch>='a'&&ch<='z'){
+        return ch;
+    }
+    else{
+        char temp = ch -'A'+'a';
+        return temp;
+    }
+}
 int getLength(char name[]){
     int count = 0;
     for(int i = 0;name[i]!='\0';i++){
@@ -11,7 +21,7 @@ int getLength(char name[]){
 bool checkPalindrome(char a[], int n){
     int s = 0;
     int e = n-1;
-    while(s<e){
+    while(s<=e){
         if(a[s]!=a[e]){
             return 0;
         }
@@ -21,6 +31,7 @@ bool checkPalindrome(char a[], int n){
         }
     }
     return 1;
+
 }
 
 int main(){
