@@ -1,3 +1,5 @@
+using namespace std;
+#include<string>
 class Solution {
     private:
     bool valid(char c){
