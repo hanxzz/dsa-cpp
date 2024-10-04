@@ -11,7 +11,6 @@ int main(){
         n = n/10;
         newnum = newnum+ digit*digit*digit;
     }
-    cout<<newnum;
     if(newnum==dup){
         cout<<"true";
     }

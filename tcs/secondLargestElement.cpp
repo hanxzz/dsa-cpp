@@ -27,3 +27,5 @@ int main()
     getElements(arr,n);
     return 0;
 }
+
+
