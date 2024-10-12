@@ -3,7 +3,7 @@ using namespace std;
 
 class Human{
     public:
-    int age = 10;
+    int age;
     int height;
     int weight;
     void speak(){
